@@ -1,0 +1,2 @@
+selenium
+chromedriver_installer --install-option="--chromedriver-version=2.46"
