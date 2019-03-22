@@ -7,7 +7,7 @@ import time
 class ReservationPageLocators:
     """A class for Reservation page locators. All login page locators should come here"""
     VPN_LINK   = (By.XPATH, "//a[text()='VPN']")
-    IE_CONNECTION_RED_ICON = (By.XPATH, "//a[text()='IE_Mitra']/following::td[5]/div/div/div[@class='deactive_active manageicon']")
+    IE_CONNECTION_RED_ICON = (By.XPATH, "//a[text()='IE_Mitra']/following::td[5]/div/div/div[@class='deactive_active manageicon' or @class='active manageicon']")
     OK_BUTTON = (By.XPATH, "//input[@name='messegeEle' and @value='OK']")
 
 class ReservationPage(BasePage):
