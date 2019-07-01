@@ -112,7 +112,7 @@ class BasePage(object):
 
         try:
             status_code = urllib.request.urlopen(host).getcode()
-        except HTTPError as e:
+        except (HTTPError, URLError) as e:
             logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
             logging.info(e.code)
             logging.info(e)
