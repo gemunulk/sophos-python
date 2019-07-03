@@ -114,7 +114,7 @@ class BasePage(object):
             status_code = urllib.request.urlopen(host).getcode()
         except (HTTPError, URLError) as e:
             logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)s - %(message)s', level=logging.INFO)
-            logging.info(e.code)
+            #logging.info(e.code)
             logging.info(e)
             return False
         else:
